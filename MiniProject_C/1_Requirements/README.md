@@ -1,6 +1,10 @@
-# Requirements
+# Software Requirements
 
-* Capture all the requirements wrt system, module, interface, integration, testing, Functional and Non-functional
-* Captures Basic Planning of the project through - Sample Gantt Chart attached
+* IDE : Code::Blocks 20.03
+* Compiler : GNU GCC Compiler
+* Tools : MS Word, draw.io
 
-* Tools: MS Excel, MS word or Similar
+# Header Files
+* stdio.h
+* stdlib.h
+* string.h
