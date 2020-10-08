@@ -5,7 +5,7 @@ void menu()
     printf("\n\n\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2 TENNIS SCOREBOARD TRACKER \xB2\xB2\xB2\xB2\xB2\xB2\xB2");
     printf("\n\n\n\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2 WELCOME TO THE MAIN MENU \xB2\xB2\xB2\xB2\xB2\xB2\xB2");
     printf("\n\n\n\t\t\t\t1.New Scorecard\n");
-    printf("\t\t\t\t2.View scorecard\n");
+    printf("\t\t\t\t2.View Scorecard\n");
     printf("\t\t\t\t3.Exit\n\n\n\n\n\t\t Enter your choice:");
 }
 
