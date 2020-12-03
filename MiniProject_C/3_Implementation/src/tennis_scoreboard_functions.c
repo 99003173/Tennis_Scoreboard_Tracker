@@ -145,45 +145,45 @@ void scoreboard(FILE *newfile)
     char ret = '\0';        // temp var to clear buffer
 
     printf("\n\tYour Name:");
-    scanf("%[^\n]%*c",Match.umpire_name);
+    scanf("%4s",Match.umpire_name);
     printf("\n\tTournament:");
-    scanf("%[^\n]%*c",Match.tournament);
+    scanf("%4s",Match.tournament);
     printf("\n\tVenue:");
-    scanf("%[^\n]%*c",Match.venue);
+    scanf("%4s",Match.venue);
     printf("\n\tNo Of Sets:");
     scanf("%d",&Match.number_of_sets);
     scanf("%c",&ret);                                              
     printf("\n\tSingles/Doubles(S/D):");
-    scanf("%[^\n]%*c",&Match.number_of_players);
+    scanf("%4s",&Match.number_of_players);
     printf("\n\tDate(dd/mm/yyyy):");
-    scanf("%[^\n]%*c",Match.date);
+    scanf("%4s",Match.date);
     printf("\n\tStarting Time:");
-    scanf("%[^\n]%*c",Match.start_time);
+    scanf("%4s",Match.start_time);
     printf("\n\tTeam A:");
-    scanf("%[^\n]%*c",TeamA.team_name);
+    scanf("%4s",TeamA.team_name);
     printf("\n\tFirst Player Name:");
-    scanf("%[^\n]%*c",TeamA.player_name_1);
+    scanf("%4s",TeamA.player_name_1);
     printf("\n\tGender(M/F/O):");
-    scanf("%[^\n]%*c",&TeamA.gender[0]);
+    scanf("%4s",&TeamA.gender[0]);
     if(Match.number_of_players=='D')
     {
         printf("\n\tSecond Player Name:");
-        scanf("%[^\n]%*c",TeamA.player_name_2);
+        scanf("%4s",TeamA.player_name_2);
         printf("\n\tGender(M/F/O):");
-        scanf("%[^\n]%*c",&TeamA.gender[1]);
+        scanf("%4s",&TeamA.gender[1]);
     }
     printf("\n\tTeam B:");
-    scanf("%[^\n]%*c",TeamB.team_name);
+    scanf("%4s",TeamB.team_name);
     printf("\n\tFirst Player Name:");
-    scanf("%[^\n]%*c",TeamB.player_name_1);
+    scanf("%4s",TeamB.player_name_1);
     printf("\n\tGender(M/F/O):");
-    scanf("%[^\n]%*c",&TeamB.gender[0]);
+    scanf("%4s",&TeamB.gender[0]);
     if(Match.number_of_players=='D')
     {
         printf("\n\tSecond Player Name:");
-        scanf("%[^\n]%*c",TeamB.player_name_2);
+        scanf("%4s",TeamB.player_name_2);
         printf("\n\tGender(M/F/O):");
-        scanf("%[^\n]%*c",&TeamB.gender[1]);
+        scanf("%4s",&TeamB.gender[1]);
     }
     printf("\n\tStart Tracking:");
 
@@ -376,7 +376,7 @@ void scoreboard(FILE *newfile)
         }
     }
     printf("\n\tEnding Time:");
-    scanf("%[^\n]%*c",Match.end_time);
+    scanf("%4s",Match.end_time);
 
     ret='\0';
 
@@ -408,7 +408,7 @@ void menu_option(int select)
     {
         system("color 30");
         printf("\n\n\t\tEnter the password to login:");
-        scanf("%s",pass);
+        scanf("%4s",pass);
         if (strcmp(pass,password)==0)
         {
             printf("\n\n\tPassword Match!\n\tLOADING");
@@ -430,7 +430,7 @@ void menu_option(int select)
                 if (flag==1)
                 {
                     printf("\n\tPlease enter the new file name: ");
-                    scanf(" %[^\n]%*c",filename);
+                    scanf(" %4s",filename);
                     j=0;
                 }
                 rewind(filelist);
